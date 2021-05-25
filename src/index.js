@@ -11,8 +11,11 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 1024,
     height: 768,
+    frame: false,
+    fullscreen: true,
     webPreferences: {
-      devTools: false
+      devTools: false,
+      nodeIntegration: true
     }
   });
 
